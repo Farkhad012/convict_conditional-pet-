@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'a_Stamper Bold';
+	src: url('./fonts/a_stamper_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/a_stamper_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/a_stamper_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/a_stamper_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/a_stamper_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/a_stamper_bold.svg#a_stamper_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

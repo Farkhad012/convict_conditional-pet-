@@ -1,0 +1,83 @@
+@import '../../styles/general.scss';
+
+
+.accordion {
+  display: grid;
+  align-items: start;
+  align-content: start;
+
+
+
+  &-item {
+    border-bottom: 2px solid black;
+    border-top: 2px solid $background-page-color;
+    border-radius: 50px;
+    padding: 16px 32px;
+
+    transition: all 0.5s ease;
+
+  }
+
+  &-item.show {
+    border-bottom: 2px solid black;
+    border-top: 2px solid $background-page-color;
+    padding: 16px 32px;
+
+    transition: all 0.5s ease;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+  }
+
+  &-title>div {
+    font-size: 24px;
+  }
+
+  &-content {
+    margin-top: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+
+  li {
+    margin: 8px 0;
+    color: $active-link-color;
+    // font-size: 24px;
+    font-weight: 400;
+    text-indent: 48px;
+    line-height: 24px;
+    text-align: justify;
+
+    span {
+      font-size: 16px;
+      color: $subtitle-text-color;
+    }
+  }
+
+  .show {
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  }
+
+  .icon {
+    position: relative;
+    font-size: 40px;
+    color: $active-link-color;
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+  }
+
+  .icon-open {
+    font-size: 40px;
+    color: $active-link-color;
+    transform: rotate(-225deg);
+    transition: all 0.5s ease;
+  }
+}

@@ -1,0 +1,67 @@
+@import './reset.scss';
+@import '../fonts/asb_font/a_stamper_bold.scss';
+@import './variables.scss';
+
+
+h1 {
+  display: inline-block;
+  color: $title-text-color;
+  font-family: 'a_Stamper Bold';
+  margin: 0 36px;
+  font-size: 16px;
+  text-align: center;
+  filter: drop-shadow(12px 12px 4px #000000);
+  transform: rotate(-10deg);
+
+  span:nth-child(1) {
+    font-size: 14px;
+  }
+
+  span:nth-child(3) {
+    font-size: 50px;
+  }
+
+  span:nth-child(5) {
+    font-size: 10px;
+  }
+}
+
+h2 {
+  color: $subtitle-text-color;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+h3 {
+  display: inline-block;
+  color: $subtitle-text-color;
+  font-size: 20px;
+  margin: 12px 0;
+  border-bottom: 0.5px solid white;
+  padding-bottom: 4px;
+}
+
+p {
+  margin: 8px 0;
+  color: $subtitle-text-color;
+  text-indent: 48px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+p, 
+li {
+  text-shadow: 1px 1px 1px #000;
+}
+
+a:hover {
+  filter: drop-shadow(12px 12px 4px #000000);
+  transition: all 0.3s ease;
+}

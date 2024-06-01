@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+
+.link-btn {
+  padding: 48px 72px;
+  background-color: transparent;
+  border:1px solid $button-border-color;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 100ms ease-in-out, color 20ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 30px 1px $button-border-color inset;
+    // transform: scale(1.1);
+  }
+}

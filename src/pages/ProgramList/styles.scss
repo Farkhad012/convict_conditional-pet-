@@ -1,0 +1,15 @@
+.block {
+  padding: 24px;
+
+  h2 {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 12px 0;
+  }
+}

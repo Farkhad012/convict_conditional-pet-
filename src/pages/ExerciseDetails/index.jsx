@@ -30,7 +30,7 @@ export default function ExerciseDetails() {
           </div>
           <h2>{exercise.id} уровень. {exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)}</h2>
           <div className="block-content exercise-details">
-            <div className="exercise-theory side">
+            <div className="exercise-theory">
               <h3>Выполнение</h3>
               <p>{exercise.process}</p>
               <h3>Упражнение в разрезе</h3>
@@ -58,8 +58,9 @@ export default function ExerciseDetails() {
             <div className="exercise-practice side">
               <h3>Демонстрация</h3>
               <div className="exercise-demonstration">
-                <img src={exercise.imgA} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} А`} />
-                <img src={exercise.imgB} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} Б`} />
+                {exercise.imgA ? <img src={exercise.imgA} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} А`} /> : ""}
+                {exercise.imgB ? <img src={exercise.imgB} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} Б`} /> : ""}
+                {exercise.imgC ? <img src={exercise.imgC} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} В`} /> : ""}
               </div>
             </div>
           </div>

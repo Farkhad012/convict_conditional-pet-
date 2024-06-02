@@ -28,13 +28,14 @@ export default function Modal({ link, exerciseType }) {
   }
 
   console.log(exercise);
-  const { imgA, imgB } = exercise;
+  const { imgA, imgB, imgC } = exercise;
 
   return (
     <div className="modal">
       <div className="exercise-demonstration">
         {imgA ? <img src={imgA} alt={`${exercise.title} A`} /> : ""}
         {imgB ? <img src={imgB} alt={`${exercise.title} B`} /> : ""}
+        {imgC ? <img src={imgC} alt={`${exercise.title} C`} /> : ""}
       </div>
     </div>
   );

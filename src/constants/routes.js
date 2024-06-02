@@ -1,5 +1,8 @@
 export const PathName = {
   Home: '/',
+  SignIn: '/signIn',
+  SignUp: '/signUp',
+  AuthDetails: '/authDetails',
   ProgramList: '/programList',
   ProgramDetails: '/programList/:link',
   ArticleList: '/articleList',

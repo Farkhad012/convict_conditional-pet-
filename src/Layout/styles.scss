@@ -22,7 +22,7 @@
   white-space: nowrap;
 
   li {
-    padding: 12px 12px;
+    padding: 12px 4px;
   }
 
   .active {
@@ -30,6 +30,13 @@
     border-bottom: 0.5px solid $active-link-color;
     padding-bottom: 4px;
   }
+}
+
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+
 }
 
 .container {

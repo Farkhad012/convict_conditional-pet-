@@ -41,7 +41,7 @@ export default function ProgramDetails() {
           </div>
           <div className="side">
             <h3>Расписание:</h3>
-            <table className="table side">
+            <table className="table">
 
               <thead className="table-head">
                 <tr className="table-row">

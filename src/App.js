@@ -4,15 +4,19 @@ import { PathName } from './constants';
 
 import Layout from './Layout';
 import HomePage from './pages/HomePage';
+import SignIn from './pages/Auth/SignIn';
+import SignUp from './pages/Auth/SignUp';
+import AuthDetails from './pages/Auth/AuthDetails';
 import ProgramList from './pages/ProgramList';
+import ProgramDetails from './pages/ProgramDetails';
 import ArticleList from './pages/ArticleList';
+import ArticleDetails from './pages/ArticleDetails';
 import ExerciseList from './pages/ExerciseList';
 import ExerciseCategory from './pages/ExerciseCategory';
-import ProgramDetails from './pages/ProgramDetails';
 import ExerciseDetails from './pages/ExerciseDetails';
 
 import './App.scss';
-import ArticleDetails from './pages/ArticleDetails';
+
 
 function App() {
   return (
@@ -22,6 +26,9 @@ function App() {
 
         <Route path={PathName.Home} element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path={PathName.SignIn} element={<SignIn />} />
+          <Route path={PathName.SignUp} element={<SignUp />} />
+          <Route path={PathName.AuthDetails} element={<AuthDetails />} />
           <Route path={PathName.ProgramList} element={<ProgramList />} />
           <Route path={PathName.ProgramDetails} element={<ProgramDetails />} />
           <Route path={PathName.ArticleList} element={<ArticleList />} />

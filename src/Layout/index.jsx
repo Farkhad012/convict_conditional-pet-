@@ -31,6 +31,14 @@ export default function Layout() {
               <li className="header__nav-item">
                 <NavLink to={PathName.ExerciseList} className="header__nav-link">Большая шестёрка</NavLink>
               </li>
+              <div className="header__nav-item">
+                <li className="header__nav-item">
+                  <NavLink to={PathName.SignIn} className="header__nav-link">Войти</NavLink>
+                </li>/
+                <li className="header__nav-item">
+                  <NavLink to={PathName.SignUp} className="header__nav-link">Регистрация</NavLink>
+                </li>
+              </div>
             </ul>
             {/* <div class="burger__menu-icon">
               <span></span>

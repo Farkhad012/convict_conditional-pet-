@@ -5,7 +5,7 @@ import { exerciseData } from './exerciseData';
 
 import './styles.scss';
 
-export default function ExerciseDetails() {
+export function ExerciseDetails() {
   const { link, category } = useParams();
   const navigate = useNavigate();
 
@@ -17,10 +17,7 @@ export default function ExerciseDetails() {
     const selectedExercise = exerciseData[category].find(levelItem => levelItem.id === Number(link));
     setExercise(selectedExercise);
   }, [link, category]);
-
-  console.log(exerciseData[category])
-  console.log(category)
-
+  
   return (
     <div className="block">
       {exercise && (

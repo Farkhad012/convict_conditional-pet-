@@ -6,7 +6,7 @@ import { PathName } from '../../constants/routes';
 
 import "./styles.scss";
 
-export default function ArticleDetails() {
+export function ArticleDetails() {
   const { link } = useParams();
   const [article, setArticle] = useState(null);
   const navigate = useNavigate();

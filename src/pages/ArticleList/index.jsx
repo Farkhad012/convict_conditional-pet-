@@ -3,7 +3,7 @@ import LinkBtn from '../../components/LinkBtn';
 
 import './styles.scss';
 
-export default function ArticleList() {
+export function ArticleList() {
   return (
     <section className="block">
         <h2>Мудрость тела. Железные правила:</h2>

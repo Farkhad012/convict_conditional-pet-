@@ -3,7 +3,7 @@ import LinkBtn from "../../components/LinkBtn";
 
 import './styles.scss';
 
-export default function ExerciseList() {
+export function ExerciseList() {
   return (
     <section className="block">
       <h2>Большая шестерка: Силовые упражнения</h2>

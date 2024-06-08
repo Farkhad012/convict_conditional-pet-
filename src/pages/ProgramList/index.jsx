@@ -4,7 +4,7 @@ import LinkBtn from "../../components/LinkBtn";
 
 import './styles.scss';
 
-export default function ProgramList() {
+export function ProgramList() {
   return (
     <section className="block">
       <h2>Тренировочные программы:</h2>

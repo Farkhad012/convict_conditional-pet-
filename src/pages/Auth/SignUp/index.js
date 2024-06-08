@@ -8,7 +8,7 @@ import { auth } from '../../../firebase';
 import './styles.scss';
 
 
-export default function SignUp() {
+export function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [copyPassword, setCopyPassword] = useState("");

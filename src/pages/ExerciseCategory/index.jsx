@@ -7,7 +7,7 @@ import { levelsData } from './levelsData';
 
 import "./styles.scss";
 
-export default function ExerciseCategory() {
+export function ExerciseCategory() {
   const { category } = useParams();
   const exercise = levelsData.exercises.find(exercise => exercise.link === category);
     

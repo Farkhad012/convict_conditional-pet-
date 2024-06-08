@@ -5,7 +5,7 @@ import { auth } from '../../../firebase'
 
 import './styles.scss';
 
-export default function AuthDetails() {
+export function AuthDetails() {
   const [authUser, setAuthUser] = useState(null)
 
   useEffect(() => {

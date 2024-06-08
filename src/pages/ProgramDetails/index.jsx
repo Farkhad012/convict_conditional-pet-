@@ -5,7 +5,7 @@ import programmesData from '../ProgramList/programmes.json';
 
 import './styles.scss';
 
-export default function ProgramDetails() {
+export function ProgramDetails() {
   const { link } = useParams();
   const navigate = useNavigate();
   const [programm, setProgramm] = useState(null);

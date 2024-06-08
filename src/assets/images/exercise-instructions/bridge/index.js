@@ -1,0 +1,16 @@
+export { default as bridge2 } from 'src/assets/images/exercise-instructions/bridge/bridge_2.jpg';
+export { default as bridge1 } from 'src/assets/images/exercise-instructions/bridge/bridge_1.jpg';
+export { default as bridge3 } from 'src/assets/images/exercise-instructions/bridge/bridge_3.jpg';
+export { default as bridge4 } from 'src/assets/images/exercise-instructions/bridge/bridge_4.jpg';
+export { default as bridge5 } from 'src/assets/images/exercise-instructions/bridge/bridge_5.jpg';
+export { default as bridge6 } from 'src/assets/images/exercise-instructions/bridge/bridge_6.jpg';
+export { default as bridge7 } from 'src/assets/images/exercise-instructions/bridge/bridge_7.jpg';
+export { default as bridge8 } from 'src/assets/images/exercise-instructions/bridge/bridge_8.jpg';
+export { default as bridge9 } from 'src/assets/images/exercise-instructions/bridge/bridge_9.jpg';
+export { default as bridge10 } from 'src/assets/images/exercise-instructions/bridge/bridge_10.jpg';
+export { default as bridge11 } from 'src/assets/images/exercise-instructions/bridge/bridge_11.jpg';
+export { default as bridge12 } from 'src/assets/images/exercise-instructions/bridge/bridge_12.jpg';
+export { default as bridge13 } from 'src/assets/images/exercise-instructions/bridge/bridge_13,14,15.jpg';
+export { default as bridge16 } from 'src/assets/images/exercise-instructions/bridge/bridge_16,17,18.jpg';
+export { default as bridge19 } from 'src/assets/images/exercise-instructions/bridge/bridge_19,20,21.jpg';
+export { default as bridge22 } from 'src/assets/images/exercise-instructions/bridge/bridge_22,23,24.jpg';

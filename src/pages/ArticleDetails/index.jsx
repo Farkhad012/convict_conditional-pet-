@@ -26,9 +26,9 @@ export function ArticleDetails() {
   const goBack = () => navigate(-1);
 
   return (
-    <section className="block">
+    <>
       {article && (
-        <div className="container block-content">
+        <div className="block-content">
           <div className="block-nav">
             <button onClick={goBack} className="button-link">🠐 назад</button>
           </div>
@@ -45,6 +45,6 @@ export function ArticleDetails() {
           </div>
         </div>
       )}
-    </section>
+    </>
   );
 }

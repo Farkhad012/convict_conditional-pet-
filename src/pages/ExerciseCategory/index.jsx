@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Accordion from "../../components/Accordion";
 import Modal from "../../components/Modal";
-import { levelsData } from './levelsData';
+import { levelsData } from "./levelsData";
 
 import "./styles.scss";
 
@@ -35,7 +35,7 @@ export function ExerciseCategory() {
 
   
   return (
-    <div className="block">
+    <>
       {exercise && (
         <div className="block-content">
           <div className="block-nav">
@@ -112,6 +112,6 @@ export function ExerciseCategory() {
         </div>
       )
       }
-    </div >
+    </ >
   )
 }

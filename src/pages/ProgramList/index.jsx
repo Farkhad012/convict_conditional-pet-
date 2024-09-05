@@ -6,7 +6,7 @@ import './styles.scss';
 
 export function ProgramList() {
   return (
-    <section className="block">
+    <>
       <h2>Тренировочные программы:</h2>
       <div className="block-content">
         {programmesData.programmes.map(program => (
@@ -17,6 +17,6 @@ export function ProgramList() {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 }

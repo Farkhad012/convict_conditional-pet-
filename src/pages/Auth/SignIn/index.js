@@ -1,4 +1,5 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { useState } from "react";
 
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -7,8 +8,11 @@ import { auth } from '../../../firebase';
 import { AuthDetails } from "../AuthDetails";
 
 import './styles.scss';
+import { setAuthUser } from "../../../features/auth/authSlice";
 
 export function SignIn() {
+  const dispatch = useDispatch();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [status, setStatus] = useState("")
@@ -18,7 +22,8 @@ export function SignIn() {
     signInWithEmailAndPassword(auth, email, password)
       .then((user) => {
         console.log("user");
-        setStatus("Вы успешно авторизовались!")
+        dispatch(setAuthUser(user));
+        setStatus(`Вы зашли под ${email}`);
         setEmail("")
         setPassword("")
       })
@@ -30,7 +35,7 @@ export function SignIn() {
   }
 
   return (
-    <div className="container block">
+    <div className="block">
 
       <div className="auth-header">
         <h2>Вход в аккаунт</h2>
@@ -48,7 +53,7 @@ export function SignIn() {
           type="email" />
         <input
           className="auth-input"
-          placeholder="Придумайте пароль"
+          placeholder="Введите пароль"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password" />

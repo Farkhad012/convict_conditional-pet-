@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import ErrorPage from "../errorPage";
 import { exerciseData } from './exerciseData';
 
 import './styles.scss';
@@ -17,11 +18,11 @@ export function ExerciseDetails() {
     const selectedExercise = exerciseData[category].find(levelItem => levelItem.id === Number(link));
     setExercise(selectedExercise);
   }, [link, category]);
-  
+
   return (
-    <div className="block">
-      {exercise && (
-        <div className="container block-content">
+    <>
+      {exercise ? (
+        <div className="block-content">
           <div className="block-nav">
             <button onClick={goBack} className="button-link">🠐 назад</button>
           </div>
@@ -36,15 +37,15 @@ export function ExerciseDetails() {
               <table className="table">
                 <tbody className="table-body">
                   <tr className="table-row">
-                    <td className="button-link">Начальный уровень</td>
+                    <td>Начальный уровень</td>
                     <td>{exercise.norm.elementary}</td>
                   </tr>
                   <tr className="table-row">
-                    <td className="button-link">Средний уровень</td>
+                    <td>Средний уровень</td>
                     <td>{exercise.norm.intermediate}</td>
                   </tr>
                   <tr className="table-row">
-                    <td className="button-link">Продвинутый уровень</td>
+                    <td>Продвинутый уровень</td>
                     <td>{exercise.norm.advanced}</td>
                   </tr>
                 </tbody>
@@ -55,14 +56,17 @@ export function ExerciseDetails() {
             <div className="exercise-practice side">
               <h3>Демонстрация</h3>
               <div className="exercise-demonstration">
-                {exercise.imgA ? <img src={exercise.imgA} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} А`} /> : ""}
-                {exercise.imgB ? <img src={exercise.imgB} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} Б`} /> : ""}
-                {exercise.imgC ? <img src={exercise.imgC} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} В`} /> : ""}
+                {exercise.imgA && <img src={exercise.imgA} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} А`} />}
+                {exercise.imgB && <img src={exercise.imgB} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} Б`} />}
+                {exercise.imgC && <img src={exercise.imgC} alt={`${exercise.title.charAt(0).toUpperCase() + exercise.title.slice(1)} В`} />}
               </div>
             </div>
           </div>
         </div>
-      )}
-    </div>
+      ) : (
+        <ErrorPage errorMessage={"упражнение не найдено"} />
+      )
+    }
+    </>
   )
 }

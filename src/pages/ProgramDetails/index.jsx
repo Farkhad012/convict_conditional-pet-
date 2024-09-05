@@ -18,9 +18,9 @@ export function ProgramDetails() {
   const goBack = () => navigate(-1);
 
   return (
-    <section className="block">
+    <>
       {programm &&
-        <div className="container block-content">
+        <div className="block-content">
 
           <div className="block-nav">
             <button onClick={goBack} className='button-link'>🠐 назад</button>
@@ -81,6 +81,6 @@ export function ProgramDetails() {
         </div>
       }
 
-    </section>
+    </>
   );
 }

@@ -9,3 +9,6 @@ export * from './ExerciseCategory';
 export * from './ExerciseDetails';
 export * from './ProgramList';
 export * from './ProgramDetails';
+export * from './Diary';
+
+export * from './errorPage';

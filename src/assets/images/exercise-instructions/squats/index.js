@@ -1,20 +1,43 @@
-export { default as sq1 } from 'src/assets/images/exercise-instructions/squats/sq_1.jpg';
-export { default as sq2 } from 'src/assets/images/exercise-instructions/squats/sq_2.jpg';
-export { default as sq3 } from 'src/assets/images/exercise-instructions/squats/sq_3.jpg';
-export { default as sq4 } from 'src/assets/images/exercise-instructions/squats/sq_4.jpg';
-export { default as sq5 } from 'src/assets/images/exercise-instructions/squats/sq_5.jpg';
-export { default as sq6 } from 'src/assets/images/exercise-instructions/squats/sq_6.jpg';
-export { default as sq7 } from 'src/assets/images/exercise-instructions/squats/sq_7.jpg';
-export { default as sq8 } from 'src/assets/images/exercise-instructions/squats/sq_8.jpg';
-export { default as sq9 } from 'src/assets/images/exercise-instructions/squats/sq_9.jpg';
-export { default as sq10 } from 'src/assets/images/exercise-instructions/squats/sq_10.jpg';
-export { default as sq11 } from 'src/assets/images/exercise-instructions/squats/sq_11.jpg';
-export { default as sq12 } from 'src/assets/images/exercise-instructions/squats/sq_12.jpg';
-export { default as sq13 } from 'src/assets/images/exercise-instructions/squats/sq_13.jpg';
-export { default as sq14 } from 'src/assets/images/exercise-instructions/squats/sq_14.jpg';
-export { default as sq15 } from 'src/assets/images/exercise-instructions/squats/sq_15.jpg';
-export { default as sq16 } from 'src/assets/images/exercise-instructions/squats/sq_16.jpg';
-export { default as sq17 } from 'src/assets/images/exercise-instructions/squats/sq_17.jpg';
-export { default as sq18 } from 'src/assets/images/exercise-instructions/squats/sq_18.jpg';
-export { default as sq19 } from 'src/assets/images/exercise-instructions/squats/sq_19.jpg';
-export { default as sq20 } from 'src/assets/images/exercise-instructions/squats/sq_20.jpg';
+import sq1 from './sq_1.jpg';
+import sq2 from './sq_2.jpg';
+import sq3 from './sq_3.jpg';
+import sq4 from './sq_4.jpg';
+import sq5 from './sq_5.jpg';
+import sq6 from './sq_6.jpg';
+import sq7 from './sq_7.jpg';
+import sq8 from './sq_8.jpg';
+import sq9 from './sq_9.jpg';
+import sq10 from './sq_10.jpg';
+import sq11 from './sq_11.jpg';
+import sq12 from './sq_12.jpg';
+import sq13 from './sq_13.jpg';
+import sq14 from './sq_14.jpg';
+import sq15 from './sq_15.jpg';
+import sq16 from './sq_16.jpg';
+import sq17 from './sq_17.jpg';
+import sq18 from './sq_18.jpg';
+import sq19 from './sq_19.jpg';
+import sq20 from './sq_20.jpg';
+
+export {
+  sq1,
+  sq2,
+  sq3,
+  sq4,
+  sq5,
+  sq6,
+  sq7,
+  sq8,
+  sq9,
+  sq10,
+  sq11,
+  sq12,
+  sq13,
+  sq14,
+  sq15,
+  sq16,
+  sq17,
+  sq18,
+  sq19,
+  sq20,
+};

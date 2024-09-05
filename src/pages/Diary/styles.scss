@@ -1,0 +1,61 @@
+@import '../../assets/styles/general.scss';
+
+.exercise-selection {
+  min-height: 500px;
+}
+
+.exercise-comments {
+  margin-top: 24px;
+}
+
+.selection__exercise {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.selection__field {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  border: 1px solid $color1;
+  padding: 8px 12px;
+
+  border-radius: 5px;
+  color: $white;
+  height: 72px;
+  position: relative;
+}
+
+.selection__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 1;
+
+  button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+.selection__input-number {
+  background-color: $color4;
+  color: $white;
+  width: 88px;
+  border-radius: 5px;
+  font-family: 'open sans';
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.selection__input-type .active {
+  background-color: #000000;
+}
+
+.selection__button {
+  background-color: $color1;
+}
+
+

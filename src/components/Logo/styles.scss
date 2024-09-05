@@ -1,0 +1,14 @@
+@import '../../assets/styles/general.scss';
+
+.logo {
+  transform: rotate(-10deg);
+  width: 150px;
+  margin: 0 12px;
+  padding: 8px;
+
+  filter: invert(67%) sepia(60%) saturate(512%) hue-rotate(41deg) brightness(93%) contrast(86%);
+}
+
+.logo:hover {
+  filter: invert(98%) sepia(3%) saturate(829%) hue-rotate(320deg) brightness(115%) contrast(100%);
+}

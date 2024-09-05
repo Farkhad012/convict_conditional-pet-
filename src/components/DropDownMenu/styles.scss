@@ -1,0 +1,125 @@
+@import '../../assets/styles/general.scss';
+
+
+.drop-down {
+  width: max-content;
+  cursor: pointer;
+
+  &__title {
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 550px;
+    border-radius: 5px;
+    background-color: $color4;
+    color: $white;
+  }
+
+  &__title-logo {
+    width: 12px;
+    height: 12px;
+    background-image: url('../../assets/images/icons/triangle.png');
+    transform: rotate(-180deg);
+    background-size: cover;
+    filter: invert(1);
+    transition: all 0.5s ease;
+  }
+
+  &__title-logo.open {
+    transform: rotate(0deg);
+  }
+
+  &__menu {
+    position: absolute;
+    width: max-content;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 12px 12px 12px #000000;
+    transition: max-height 1s ease, opacity 1s ease;
+    background-color: $background-page-color;
+    top: 80px;
+    left: 400px;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+  }
+
+  &__menu.open {
+
+    // position: relative;
+    visibility: visible;
+    opacity: 1;
+    max-height: 999px;
+  }
+
+  &__menu-item {
+    padding: 12px;
+    text-shadow: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  &__menu-item:hover {
+    background-color: #f0f0f01e;
+  }
+
+  &__menu-item_logo {
+    width: 10px;
+    height: 10px;
+    background-image: url('../../assets/images/icons/triangle.png');
+    transform: rotate(-30deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert(1);
+    transition: all 0.5s ease;
+  }
+
+  .sub-menu {
+    display: none;
+    background-color: $background-page-color;
+    position: absolute;
+    top: -500%;
+    left: 100%;
+    box-shadow: 12px 12px 12px #000000;
+    border: 1px solid black;
+    border-radius: 8px;
+    z-index: 99;
+    width: max-content;
+  }
+
+  .sub-menu.open {
+    display: block;
+  }
+
+  .sub-menu__item {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+  }
+
+  .sub-menu__item div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+
+  .sub-menu__item:hover {
+    background-color: #f0f0f01e;
+  }
+
+}

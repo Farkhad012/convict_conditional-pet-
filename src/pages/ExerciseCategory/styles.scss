@@ -5,6 +5,7 @@
   padding: 16px;
   border-top: 0.5px solid white;
   border-bottom: 0.5px solid white;
+  font-style: italic;
 }
 
 .additional-content {
@@ -22,15 +23,15 @@
   border-collapse: collapse;
   border-radius: 50%;
   overflow: hidden;
-  text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: $background-page-color;
+  background-color: $color4;
+  color: $white;
 
   td {
     white-space: wrap;
   }
   td a {
-    padding: 16px 0px 16px 0;
+    padding: 4px 0px;
   }
 
   td,
@@ -42,25 +43,20 @@
   &-body &-row {
     width: 100%;
   }
+
   &-body &-row:nth-child(even) {
-    background-color: #797979;
+    background-color: $color5;
   }
 
   &-head tr {
-    background-color: $title-text-color;
-    
-    color: $secondary-text-color;
-
+    background-color: $color2;
+    color: $color3;
     text-shadow: none;
     font-weight: bold;
     vertical-align: bottom;
     white-space: nowrap;
   }
   
-  &-head tr:hover {
-    background-color: $title-text-color;    
-  }
-
   &-head th:nth-child(1) {
     width: 5%;
   }
@@ -73,8 +69,8 @@
     width: 15%;
   }
 
-  &-body {
-    color: $primary-text-color;
+  a {
+    color: $white;
   }
 
 }
@@ -89,17 +85,10 @@
   width: 100%;
 }
 
-.nav-link {
-  color: white;
-  // margin-bottom: 24px;
-  // font-size: 48px;
-
-}
-
 .button-link {
   padding: 4px 24px 4px 0px;
   background-color: transparent;
-  color: $title-text-color;
+  color: $color5;
   font-size: 16px;
   font-weight: 600;
 }

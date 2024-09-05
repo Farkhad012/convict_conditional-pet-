@@ -18,6 +18,9 @@ h2 {
     display: flex;
     align-items: center;
   }
+  &-header h2{
+    margin: 0;
+  }
 
   &-input {
     border: 1px solid black;
@@ -28,7 +31,7 @@ h2 {
   }
 
   &-input.error {
-    border: 2px solid $error-text-color;
+    border: 1px solid $error-text-color;
   }
 
   &-input:hover {

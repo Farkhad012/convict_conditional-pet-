@@ -1,0 +1,45 @@
+@import '../../assets/styles/general.scss';
+
+.app-header {
+  background-color: $background-color;
+  padding: 28px;
+  height: 150px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  font-weight: 300;
+  font-size: 24px;
+  white-space: nowrap;
+
+  a {
+    padding: 8px 8px;
+    font-weight: bold;
+  }
+
+  .active {
+    color: $active-link-color;
+    transition: all 0.5s ease;
+    
+    border-bottom: 1px solid $active-link-color;
+  }
+}
+
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+
+}

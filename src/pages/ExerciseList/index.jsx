@@ -5,7 +5,7 @@ import './styles.scss';
 
 export function ExerciseList() {
   return (
-    <section className="block">
+    <>
       <h2>Большая шестерка: Силовые упражнения</h2>
       <div className="block-content">
         {levelsData.exercises.map(exercise => (
@@ -16,6 +16,6 @@ export function ExerciseList() {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 }

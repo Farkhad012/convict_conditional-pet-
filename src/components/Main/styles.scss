@@ -1,0 +1,31 @@
+@import '../../assets/styles/general.scss';
+
+.main {
+  // border-bottom: 2px solid black;
+  border-top: 2px solid rgb(117, 116, 116);
+  flex-grow: 1;
+  background-color: $background-color;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1390px;
+  padding: 0 24px;
+}
+
+.block {
+  padding: 24px;
+
+  h2 {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 12px 0;
+  }
+}

@@ -6,9 +6,7 @@ export default function Accordion({ i, title, content, isSelected, onClick }) {
 
 
   return (
-
     <>
-
       <div className={isSelected ? "accordion-item show" : "accordion-item"}>
 
         <div className="accordion-title" onClick={() => onClick(i)}>
@@ -27,8 +25,6 @@ export default function Accordion({ i, title, content, isSelected, onClick }) {
         </div>
 
       </div>
-
-
     </>
   )
 }

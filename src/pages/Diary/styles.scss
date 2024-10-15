@@ -1,9 +1,5 @@
 @import '../../assets/styles/general.scss';
 
-.exercise-selection {
-  min-height: 500px;
-}
-
 .exercise-comments {
   margin-top: 24px;
 }
@@ -57,5 +53,15 @@
 .selection__button {
   background-color: $color1;
 }
+
+.comments-input {  
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.save__button {
+  margin: 16px auto;
+}
+
 
 

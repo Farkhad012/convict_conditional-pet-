@@ -65,10 +65,13 @@ export function Diary() {
     setSelectedExercise("");
   };
 
-
   const handleDeleteExercise = (index) => {
     setExerciseList(prev => prev.filter((_, i) => i !== index));
   };
+
+  const handleSave = () => {
+    localStorage.setItem('trainingDay');
+  }
 
   return (
     <>
@@ -145,8 +148,12 @@ export function Diary() {
       </div>
       <div className="field column-direction exercise-comments">
         <h3>Комментарии</h3>
-        <div>поле для комментариев</div>
+        <textarea className="comments-input" width="60px" placeholder="тут можно оставить комментарий к тренировке..."></textarea>
       </div>
+      <button
+        className="button save__button"
+        onClick={handleSave}
+      >Сохранить запись в дневнике</button>
     </>
   );
 }
